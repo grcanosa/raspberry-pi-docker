@@ -1,12 +1,12 @@
 version: '3'
 services: 
-  webserver:
-    build: webserver/
-    ports:
-      - "80:80"
+#  webserver:
+#    build: webserver/
+#    ports:
+#      - "80:80"
   homeassistant:
     container_name: home-assistant
-    image: homeassistant/home-assistant
+    image: homeassistant/raspberrypi3-homeassistant:0.69.0
     volumes:
       - ./homeassistant/home-assistant-configuration:/config
       - /etc/localtime:/etc/localtime:ro
