@@ -1,0 +1,3 @@
+[submodule "homeassistant/home-assistant-configuration"]
+	path = homeassistant/home-assistant-configuration
+	url = https://github.com/grcanosa/home-assistant-configuration.git

@@ -2,15 +2,15 @@ version: '3'
 services: 
   webserver:
     build: webserver/
+    ports:
+      - "80:80"
   homeassistant:
     container_name: home-assistant
     image: homeassistant/home-assistant
     volumes:
-      - /path/to/your/config:/config
+      - ./homeassistant/home-assistant-configuration:/config
       - /etc/localtime:/etc/localtime:ro
     devices:
-      - /dev/ttyUSB0:/dev/ttyUSB0
-      - /dev/ttyUSB1:/dev/ttyUSB1
       - /dev/ttyACM0:/dev/ttyACM0
     restart: always
     network_mode: host
