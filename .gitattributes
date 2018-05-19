@@ -1,0 +1,2 @@
+#pattern  filter=crypt diff=crypt
+sslcert/* filter=crypt diff=crypt
