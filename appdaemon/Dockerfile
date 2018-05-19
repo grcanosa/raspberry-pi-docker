@@ -5,3 +5,5 @@ VOLUME /conf
 EXPOSE 5050 
 
 RUN pip3 install appdaemon 
+
+CMD appdaemon -c /conf
