@@ -4,6 +4,3 @@
 [submodule "appdaemon/home-assistant-apps"]
 	path = appdaemon/home-assistant-apps
 	url = https://github.com/grcanosa/home-assistant-apps.git
-[submodule "appdaemon/appdaemon_git"]
-	path = appdaemon/appdaemon_git
-	url = https://github.com/home-assistant/appdaemon.git
