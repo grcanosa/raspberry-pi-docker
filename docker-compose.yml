@@ -8,7 +8,7 @@ services:
 #      - - ./sslcert:/sslcert
   homeassistant:
     container_name: home-assistant
-    image: homeassistant/raspberrypi3-homeassistant:0.69.0
+    image: homeassistant/raspberrypi3-homeassistant:0.77.2
     volumes:
       - ./homeassistant/home-assistant-configuration:/config
       - /etc/localtime:/etc/localtime:ro
